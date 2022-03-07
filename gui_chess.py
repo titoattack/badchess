@@ -187,6 +187,7 @@ def main(current_state):
 	while run:
 		turn = current_state.turn
 		__, r = divmod(i,15)
+		#r = 0
 		if turn == 'w':
 			if WPLAYER == 'engine':
 				if r != 0:
