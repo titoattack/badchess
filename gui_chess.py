@@ -4,7 +4,7 @@ import chess_rules as rules
 import search_algo as algo
 
 #Set players, 'engine' or 'user'
-WPLAYER = 'engine'
+WPLAYER = 'user'
 BPLAYER = 'engine'
 
 # Colors, sizes and window
@@ -183,26 +183,17 @@ def user_selector(current_state):
 
 def main(current_state):
 	run = True
-	i = 0
 	while run:
 		turn = current_state.turn
-		__, r = divmod(i,15)
-		#r = 0
 		if turn == 'w':
 			if WPLAYER == 'engine':
-				if r != 0:
-					next_state = algo.minimax_algo(current_state, True, 2)
-				else:
-					next_state = algo.random_move(current_state)
+				next_state = algo.minimax_algo(current_state, True, 2)
 				#next_state = algo.first_instinct_move(current_state)
 			else:
 				next_state = user_selector(current_state)
 		elif turn == 'b':
 			if BPLAYER == 'engine':
-				if r != 0:
-					next_state = algo.minimax_algo(current_state, False, 2)
-				else:
-					next_state = algo.random_move(current_state)
+				next_state = algo.minimax_algo(current_state, False, 2)
 				#next_state = algo.random_move(current_state)
 			else:
 				next_state = user_selector(current_state)
@@ -215,7 +206,6 @@ def main(current_state):
 		if next_state != False:
 			current_state = next_state
 			
-		i += 1
 		draw_window(current_state)
 
 
