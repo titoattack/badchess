@@ -6,7 +6,7 @@ Why it's so bad? Because I just started coding. I'm learning and I will improve 
 
 Run the 'badchess.py' file present in the src/ directory using python3 interpreter:
 
-$: python3 badchess.py
+###$: python3 badchess.py
 
 By default, white player is the user and black is the engine.
 If you want to choose what plays what (user or engine, either black or white), change it at the start of the file 'badchess.py'.
