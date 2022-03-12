@@ -4,12 +4,12 @@ Why it's so bad? Because I just started coding. I'm learning and I will improve 
 
 ## HOW TO USE IT ##
 
-Run the 'badchess.py' using python3 interpreter
+Run the 'badchess.py' file using python3 interpreter:
 
 $: python3 badchess.py
 
 By default, white player is the user and black is the engine.
-If you want to choose what plays what (user or engine, either black or white), change it at the start of 'badchess.py'
+If you want to choose what plays what (user or engine, either black or white), change it at the start of 'badchess.py'.
 
 ## WHY IT IS SO BAD ##
 
